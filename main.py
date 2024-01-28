@@ -1,4 +1,5 @@
 #main function
+#main function
 # Application 1
 # Get user input
 user_entered_phrase = input("Enter any words: ")
@@ -6,18 +7,19 @@ user_entered_phrase = input("Enter any words: ")
 # Create a list of characters from the input
 original_chars = list(user_entered_phrase)
 
-# Create a list to hold the interleaved characters
-combined_chars = [None] * (2 * len(original_chars))  # Double length for interleaving
+# Create a list to hold the combined characters
+combined_chars = [None] * (2 * len(original_chars))  
 
-# Interleave characters from the original list into alternating positions
-combined_chars[::2] = original_chars  # Fill even indices
-combined_chars[1::2] = original_chars  # Fill odd indices
+# Combine characters from the original list into alternating positions
+combined_chars[::2] = original_chars  
+combined_chars[1::2] = original_chars  
 
 # Join the interleaved characters back into a string
 combined_phrase = ''.join(combined_chars)
 
 # Print the result
 print(combined_phrase)
+
 
 # Application 2
 alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
