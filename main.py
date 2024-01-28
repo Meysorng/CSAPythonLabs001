@@ -1,5 +1,4 @@
 #main function
-
 # Application 1
 # Get user input
 user_entered_phrase = input("Enter any words: ")
@@ -42,3 +41,4 @@ end_index = alphabet.index(end)
 result_string = alphabet[start_index:end_index + 1]
 
 print(result_string)
+
